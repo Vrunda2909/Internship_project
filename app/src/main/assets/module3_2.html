@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style type="text/css">
+    body {
+      margin: 10px;
+    }
+
+    .heading {
+      color: #2196f3;
+      display: inline-block;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 20px;
+      border-bottom: 2px solid #2196f3;
+      padding-bottom: 2px;
+    }
+
+    .text {
+      text-indent: 15px;
+      font-size: 15px;
+    }
+
+    ul.list {
+      list-style-type: circle;
+      margin: 7px;
+    }
+
+    .info {
+      background-color: rgb(161, 202, 255);
+      border-left: 6px solid #2196F3;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+    }
+
+    #table {
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <h1 class="heading">
+      SQL JOIN
+    </h1>
+
+    <br>
+
+    <p class="text">
+      A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+    </p>
+
+    <br>
+
+    <p class="text">
+      Let's look at a selection from the "Orders" table:
+    </p>
+
+    <br>
+
+    <div id="table">
+      <table class="w3-table-all">
+        <thead>
+          <tr class="w3-blue">
+            <th>OrderID</th>
+            <th>CustomerID</th>
+            <th>OrderDate</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>10308</td>
+          <td>2</td>
+          <td>1996/09/18</td>
+        </tr>
+        <tr>
+          <td>10309</td>
+          <td>37</td>
+          <td>1996/09/19</td>
+        </tr>
+        <tr>
+          <td>10310</td>
+          <td>77</td>
+          <td>1996/09/20</td>
+        </tr>
+      </table>
+    </div>
+
+    <br>
+
+    <p class="text">
+      Then, look at a selection from the "Customers" table:
+    </p>
+
+    <br>
+
+    <div id="table">
+      <table class="w3-table-all">
+        <thead>
+          <tr class="w3-blue">
+            <th>CustomerID</th>
+            <th>CustomerName</th>
+            <th>ContactName</th>
+            <th>Country</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>1</td>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Ana Trujillo Emparedados y helados</td>
+          <td>Ana Trujillo</td>
+          <td>Mexico</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Antonio Moreno Taquería</td>
+          <td>Antonio Moreno</td>
+          <td>Mexico</td>
+        </tr>
+      </table>
+    </div>
+
+    <br>
+
+    <p class="text">
+      Notice that the "CustomerID" column in the "Orders" table refers to the "CustomerID" in the "Customers" table. The
+      relationship between the two tables above is the "CustomerID" column. Then, we can create the following SQL
+      statement (that contains an INNER JOIN), that selects records that have matching values in both tables:
+    </p>
+
+    <br>
+
+    <div class="w3-card-4 card">
+      <header class="w3-container w3-blue">
+        <h1>
+          Example :
+        </h1>
+      </header>
+
+      <div class="w3-container">
+        <pre>SELECT Orders.OrderID, 
+Customers.CustomerName, 
+Orders.OrderDate
+FROM Orders
+INNER JOIN Customers 
+ON Orders.CustomerID =
+Customers.CustomerID;          
+          </pre>
+      </div>
+    </div>
+
+  </div>
+
+  <br><br><br><br>
+
+
+  <div>
+    <h1 class="heading">
+      Different Types of SQL JOINs
+    </h1>
+
+    <br>
+
+    <p class="text">
+      Here are the different types of the JOINs in SQL:
+    </p>
+
+    <br>
+
+    <ul class="list">
+			<li><b>(INNER) JOIN:</b> Returns records that have matching values in both tables.</li> <br>
+			<li><b>LEFT (OUTER) JOIN:</b> Returns all records from the left table, and the matched records from the right table.</li> <br>
+      <li><b>RIGHT (OUTER) JOIN:</b> Returns all records from the right table, and the matched records from the left table.</li> <br>
+      <li><b>FULL (OUTER) JOIN: </b>Returns all records when there is a match in either left or right table.</li>
+		</ul>
+
+  </div>
+
+  <br>
+  
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style type="text/css">
+		body {
+			margin: 10px;
+      overflow: hidden;
+		}
+
+		.heading {
+			color: #2196f3;
+			display: inline-block;
+			text-align: center;
+			font-weight: bold;
+			margin-top: 20px;
+			border-bottom: 2px solid #2196f3;
+			padding-bottom: 2px;
+		}
+
+		.text {
+			text-indent: 15px;
+			font-size: 15px;
+		}
+
+		ul.list {
+			list-style-type: circle;
+			margin: 7px;
+		}
+
+		.info {
+			background-color: rgb(161, 202, 255);
+			border-left: 6px solid #2196F3;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 10px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div>
+		<h1 class="heading">
+			SQL ALTER TABLE Statement
+		</h1>
+
+		<br>
+
+		<p class="text">
+			The ALTER TABLE statement is used to add, delete, or modify columns in an existing table.
+		</p>
+
+
+		<br>
+
+		<p class="text">
+      The ALTER TABLE statement is also used to add and drop various constraints on an existing table.
+    </p>
+    
+    <br>
+
+		<p class="text">
+      To add a column in a table, use the following syntax :
+		</p>
+
+		<br>
+
+		<div class="w3-card-4 card">
+			<header class="w3-container w3-blue">
+				<h1>
+					ALTER TABLE - ADD Column:
+				</h1>
+			</header>
+
+			<div class="w3-container">
+				<pre>ALTER TABLE table_name
+ADD column_name datatype;          
+          </pre>
+			</div>
+		</div>
+
+    <br>
+
+		<p class="text">
+      The following SQL adds an "Email" column to the "Customers" table:
+    </p>
+    
+    <br>
+
+		<div class="w3-card-4 card">
+			<header class="w3-container w3-blue">
+				<h1>
+					Example:
+				</h1>
+			</header>
+
+			<div class="w3-container">
+				<pre>ALTER TABLE Customers
+ADD Email varchar(255);                    
+          </pre>
+			</div>
+    </div>
+    
+    <br>
+
+		<p class="text">
+      To delete a column in a table, use the following syntax (notice that some database systems don't allow deleting a column):
+    </p>
+
+    <br>
+
+		<div class="w3-card-4 card">
+
+			<div class="w3-container">
+				<pre>ALTER TABLE table_name
+DROP COLUMN column_name;                              
+          </pre>
+			</div>
+    </div>
+
+    <br>
+
+		<p class="text">
+      The following SQL deletes the "Email" column from the "Customers" table:
+    </p>
+
+    <br>
+
+		<div class="w3-card-4 card">
+			<header class="w3-container w3-blue">
+				<h1>
+					Example:
+				</h1>
+			</header>
+
+			<div class="w3-container">
+				<pre>ALTER TABLE Customers
+DROP COLUMN Email;                            
+          </pre>
+			</div>
+    </div> 
+	
+	</div>
+
+  <br><br><br><br>
+  
+  <div>
+		<h1 class="heading">
+			ALTER TABLE - ALTER/MODIFY COLUMN
+		</h1>
+
+		<br>
+
+		<p class="text">
+			To change the data type of a column in a table, use the following syntax:
+    </p>
+    
+    <br>
+
+		<div class="w3-card-4 card">
+			<header class="w3-container w3-blue">
+				<h1>
+					SQL Server / MS Access:
+				</h1>
+			</header>
+
+			<div class="w3-container">
+				<pre>ALTER TABLE table_name
+ALTER COLUMN column_name 
+datatype;                                    
+          </pre>
+			</div>
+    </div> 
+
+	</div>
+
+
+
+</body>
+
+</html>

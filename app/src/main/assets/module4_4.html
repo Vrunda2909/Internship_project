@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style type="text/css">
+		body {
+			margin: 10px;
+		}
+
+		.heading {
+			color: #2196f3;
+			display: inline-block;
+			text-align: center;
+			font-weight: bold;
+			margin-top: 20px;
+			border-bottom: 2px solid #2196f3;
+			padding-bottom: 2px;
+		}
+
+		.text {
+			text-indent: 15px;
+			font-size: 15px;
+		}
+
+		ul.list {
+			list-style-type: circle;
+			margin: 7px;
+		}
+
+		.info {
+			background-color: rgb(161, 202, 255);
+			border-left: 6px solid #2196F3;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 10px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div>
+		<h1 class="heading">
+			The SQL ANY and ALL Operators
+		</h1>
+
+		<br>
+
+		<p class="text">
+			The ANY and ALL operators are used with a WHERE or HAVING clause.
+		</p>
+
+
+		<br>
+
+		<p class="text">
+      The ANY operator returns true if any of the subquery values meet the condition.
+    </p>
+    
+    <br>
+
+		<p class="text">
+      The ALL operator returns true if all of the subquery values meet the condition.
+		</p>
+
+		<br>
+
+		<div class="w3-card-4 card">
+			<header class="w3-container w3-blue">
+				<h1>
+					ANY Syntax:
+				</h1>
+			</header>
+
+			<div class="w3-container">
+				<pre>SELECT column_name(s)
+FROM table_name
+WHERE column_name 
+operator ANY (SELECT 
+column_name FROM 
+table_name WHERE 
+condition);
+          </pre>
+			</div>
+		</div>
+
+    <br>
+
+		<div class="w3-card-4 card">
+			<header class="w3-container w3-blue">
+				<h1>
+					ALL Syntax:
+				</h1>
+			</header>
+
+			<div class="w3-container">
+				<pre>SELECT column_name(s)
+FROM table_name
+WHERE column_name 
+operator ALL (SELECT 
+column_name FROM 
+table_name WHERE 
+condition);
+          </pre>
+			</div>
+    </div>
+    
+    <br>
+
+		<div class="info">
+			<p><strong>Note :</strong> : The operator must be a standard comparison operator (=, <>, !=, >, >=, <, or <=).</p>
+		</div>
+	
+	</div>
+
+	<br><br><br>
+
+
+</body>
+
+</html>

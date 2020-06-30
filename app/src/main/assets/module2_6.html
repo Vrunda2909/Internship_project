@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style type="text/css">
+        body {
+            margin: 10px;
+            overflow: hidden;
+        }
+
+        .heading {
+            color: #2196f3;
+            display: inline-block;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+            border-bottom: 2px solid #2196f3;
+            padding-bottom: 2px;
+        }
+
+        .text {
+            text-indent: 15px;
+            font-size: 15px;
+        }
+
+        ul.list {
+            list-style-type: circle;
+            margin: 7px;
+        }
+
+        .info {
+            background-color: rgb(161, 202, 255);
+            border-left: 6px solid #2196F3;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+        }
+
+        .warning {
+            background-color: #ffffcc;
+            border-left: 6px solid #ffeb3b;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+        }
+
+        #table {
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1 class="heading">
+            The SQL LIKE Operator
+        </h1>
+
+        <br>
+
+        <p class="text">
+            The LIKE operator is used in a WHERE clause to search for a specified pattern in a column. There are two
+            wildcards often used in conjunction with the LIKE operator:.
+        </p>
+
+        <br>
+
+        <p class="text">
+            % - The percent sign represents zero, one, or multiple characters
+        </p>
+
+        <br>
+
+        <p class="text">
+            _ - The underscore represents a single character
+        </p>
+
+        <br>
+
+        <div class="info">
+            <p><strong>Note :</strong> MS Access uses an asterisk (*) instead of the percent sign (%), and a question
+                mark (?) instead of the underscore (_).</p>
+        </div>
+
+        <br>
+
+        <p class="text">
+            The percent sign and the underscore can also be used in combinations!
+        </p>
+
+
+        <br>
+
+        <div class="w3-card-4 card">
+            <header class="w3-container w3-blue">
+                <h1>
+                    LIKE Syntax :
+                </h1>
+            </header>
+
+            <div class="w3-container">
+                <pre>SELECT column1, column2, ...
+FROM table_name
+WHERE columnN LIKE pattern;                     
+			</pre>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="warning">
+            <p><strong>Tip :</strong> MS Access uses an asterisk (*) instead of the percent sign (%), and a question
+                mark (?) instead of the underscore (_).</p>
+        </div>
+
+        <br>
+
+        <p class="text">
+            Here are some examples showing different LIKE operators with '%' and '_' wildcards:
+        </p>
+
+        <br><br>
+
+        <div id="table">
+            <table class="w3-table-all">
+                <thead>
+                    <tr class="w3-blue">
+                        <th>LIKE Operator</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>WHERE CustomerName LIKE 'a%'</td>
+                    <td>Finds any values that start with "a"</td>
+                </tr>
+                <tr>
+                    <td> WHERE CustomerName LIKE '%a'</td>
+                    <td>Finds any values that end with "a"</td>
+                </tr>
+                <tr>
+                    <td>WHERE CustomerName LIKE '%or%'</td>
+                    <td>Finds any values that have "or" in any position</td>
+                </tr>
+                <tr>
+                    <td>WHERE CustomerName LIKE '_r%'</td>
+                    <td>Finds any values that have "r" in the second position</td>
+                </tr>
+                <tr>
+                    <td>WHERE CustomerName LIKE 'a_%'</td>
+                    <td>Finds any values that start with "a" and are at least 2 characters in length</td>
+                </tr>
+                <tr>
+                    <td>WHERE CustomerName LIKE 'a__%'</td>
+                    <td>Finds any values that start with "a" and are at least 3 characters in length</td>
+                </tr>
+                <tr>
+                    <td>WHERE ContactName LIKE 'a%o'</td>
+                    <td>Finds any values that start with "a" and ends with "o"</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <br><br>
+</body>
+
+</html>

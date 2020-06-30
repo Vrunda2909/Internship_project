@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style type="text/css">
+    body {
+      margin: 10px;
+    }
+
+    .heading {
+      color: #2196f3;
+      display: inline-block;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 20px;
+      border-bottom: 2px solid #2196f3;
+      padding-bottom: 2px;
+    }
+
+    .text {
+      text-indent: 15px;
+      font-size: 15px;
+    }
+
+    ul.list {
+      list-style-type: circle;
+      margin: 7px;
+    }
+
+    .info {
+      background-color: rgb(161, 202, 255);
+      border-left: 6px solid #2196F3;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <h1 class="heading">
+      SQL Aliases
+    </h1>
+
+    <br>
+
+    <p class="text">
+      SQL aliases are used to give a table, or a column in a table, a temporary name. Aliases are often used to make
+      column names more readable. An alias only exists for the duration of the query.
+    </p>
+
+    <br>
+
+    <div class="w3-card-4 card">
+      <header class="w3-container w3-blue">
+        <h1>
+          Alias Column Syntax:
+        </h1>
+      </header>
+
+      <div class="w3-container">
+        <pre>SELECT column_name AS 
+alias_name FROM 
+table_name;
+          </pre>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="w3-card-4 card">
+      <header class="w3-container w3-blue">
+        <h1>
+          Alias Table Syntax:
+        </h1>
+      </header>
+
+      <div class="w3-container">
+        <pre>SELECT column_name(s)
+FROM table_name 
+AS alias_name;          
+          </pre>
+      </div>
+    </div>
+
+  </div>
+
+  <br><br><br>
+</body>
+
+</html>

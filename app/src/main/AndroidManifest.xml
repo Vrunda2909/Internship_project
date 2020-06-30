@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sqllearn">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".StudyActivity" />
+        <activity android:name=".StudyFragment" />
+        <activity android:name=".ModuleTwoActivity" />
+        <activity android:name=".ModuleOneActivity" />
+        <activity android:name=".ModuleThreeActivity" />
+        <activity android:name=".ModuleFourActivity" />
+        <activity android:name=".ModuleFiveActivity" />
+
+        <activity android:name=".QuizFragment" />
+        <activity android:name=".QuizOneActivity" />
+        <activity android:name=".QuizTwoActivity" />
+        <activity android:name=".QuizThreeActivity" />
+        <activity android:name=".QuizFourActivity" />
+        <activity android:name=".QuizFiveActivity" />
+
+        <activity android:name=".QueryFragment" />
+        <activity android:name=".QueryOneActivity" />
+        <activity android:name=".QueryTwoActivity" />
+        <activity android:name=".QueryThreeActivity" />
+        <activity android:name=".QueryFourActivity" />
+        <activity android:name=".QueryFiveActivity" />
+
+        <activity android:name=".ScoreActivity" />
+        <activity android:name=".ScoreFragment" />
+        <activity android:name=".CirtificateFragment" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

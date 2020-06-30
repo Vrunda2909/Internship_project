@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style type="text/css">
+    body {
+      margin: 10px;
+      overflow: hidden;
+    }
+
+    .heading {
+      color: #2196f3;
+      display: inline-block;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 20px;
+      border-bottom: 2px solid #2196f3;
+      padding-bottom: 2px;
+    }
+
+    .text {
+      text-indent: 15px;
+      font-size: 15px;
+    }
+
+    ul.list {
+      list-style-type: circle;
+      margin: 7px;
+    }
+
+    .info {
+      background-color: rgb(161, 202, 255);
+      border-left: 6px solid #2196F3;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <h1 class="heading">
+      SQL UNIQUE Constraint
+    </h1>
+
+    <br>
+
+    <p class="text">
+      The UNIQUE constraint ensures that all values in a column are different.
+    </p>
+
+
+    <br>
+
+    <p class="text">
+      Both the UNIQUE and PRIMARY KEY constraints provide a guarantee for uniqueness for a column or set of columns.
+    </p>
+
+    <br>
+
+    <p class="text">
+      A PRIMARY KEY constraint automatically has a UNIQUE constraint.
+    </p>
+
+    <br>
+
+    <p class="text">
+      However, you can have many UNIQUE constraints per table, but only one PRIMARY KEY constraint per table.
+    </p>
+  </div>
+
+  <br><br><br><br>
+
+  <div>
+    <h1 class="heading">
+      SQL UNIQUE Constraint on CREATE TABLE
+    </h1>
+
+    <br>
+
+    <p class="text">
+      The following SQL creates a UNIQUE constraint on the "ID" column when the "Persons" table is created:
+    </p>
+
+    <br>
+
+    <div class="w3-card-4 card">
+      <header class="w3-container w3-blue">
+        <h1>
+          Example:
+        </h1>
+      </header>
+
+      <div class="w3-container">
+        <pre>CREATE TABLE Persons (
+ID int NOT NULL 
+UNIQUE, LastName 
+varchar(255) NOT NULL,
+FirstName varchar(255),
+Age int );                       
+          </pre>
+      </div>
+    </div>
+
+  </div>
+
+  <br><br><br><br>
+
+  <div>
+    <h1 class="heading">
+      SQL UNIQUE Constraint on ALTER TABLE
+    </h1>
+
+    <br>
+
+    <p class="text">
+      To create a UNIQUE constraint on the "ID" column when the table is already created, use the following SQL:
+    </p>
+
+    <br>
+
+    <div class="w3-card-4 card">
+      <header class="w3-container w3-blue">
+        <h1>
+          Example:
+        </h1>
+      </header>
+
+      <div class="w3-container">
+        <pre>ALTER TABLE Persons
+ADD UNIQUE (ID);                             
+          </pre>
+      </div>
+    </div>
+
+  </div>
+
+  <br><br><br>
+
+</body>
+
+</html>

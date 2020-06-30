@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style type="text/css">
+		body {
+			margin: 10px;
+		}
+
+		.heading {
+			color: #2196f3;
+			display: inline-block;
+			text-align: center;
+			font-weight: bold;
+			margin-top: 20px;
+			border-bottom: 2px solid #2196f3;
+			padding-bottom: 2px;
+		}
+
+		.text {
+			text-indent: 15px;
+			font-size: 15px;
+		}
+
+		ul.list {
+			list-style-type: circle;
+			margin: 7px;
+		}
+
+		.info {
+			background-color: rgb(161, 202, 255);
+			border-left: 6px solid #2196F3;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-left: 10px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div>
+		<h1 class="heading">
+			SQL SELECT Statement
+		</h1>
+
+		<br>
+
+		<p class="text">
+			The SELECT statement is used to select data from a database.The data returned is stored in a result table,
+			called the result-set.
+		</p>
+
+		<br>
+
+		<div class="w3-card-4 card">
+			<header class="w3-container w3-blue">
+				<h1>
+					SELECT Syntax:
+				</h1>
+			</header>
+
+			<div class="w3-container">
+				<p>SELECT column1, column2, ...FROM table_name;</p>
+			</div>
+		</div>
+
+		<br>
+
+		<p class="text">
+			Here, column1, column2, ... are the field names of the table you want to select data from. If you want to
+			select all the fields available in the table, use the following syntax:
+		</p>
+
+		<br>
+
+		<div class="w3-card-4 card">
+
+			<div class="w3-container">
+				<p>SELECT * FROM table_name;</p>
+			</div>
+		</div>
+	</div>
+
+	<br><br><br><br>
+
+
+	<div>
+		<h1 class="heading">
+			SELECT Column Example
+		</h1>
+
+		<br>
+
+		<p class="text">
+			The following SQL statement selects the "CustomerName" and "City" columns from the "Customers" table:
+		</p>
+
+		<br>
+
+		<div class="w3-card-4 card">
+			<header class="w3-container w3-blue">
+				<h1>
+					Example :
+				</h1>
+			</header>
+
+			<div class="w3-container">
+				<p>SELECT CustomerName, City FROM Customers;</p>
+			</div>
+		</div>
+	</div>
+
+	<br><br><br><br>
+
+	<div>
+		<h1 class="heading">
+			SELECT DISTINCT Statement
+		</h1>
+
+		<br>
+
+		<p class="text">
+			The SELECT DISTINCT statement is used to return only distinct (different) values.Inside a table, a column
+			often contains many duplicate values; and sometimes you only want to list the different (distinct) values.
+
+		</p>
+
+		<br>
+
+		<div class="w3-card-4 card">
+			<header class="w3-container w3-blue">
+				<h1>
+					SELECT DISTINCT Syntax:
+				</h1>
+			</header>
+
+			<div class="w3-container">
+				<p>SELECT DISTINCT column1, column2, ...FROM table_name;</p>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+
+</html>

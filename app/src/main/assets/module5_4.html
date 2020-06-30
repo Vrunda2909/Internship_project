@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style type="text/css">
+    body {
+      margin: 10px;
+      overflow: hidden;
+    }
+
+    .heading {
+      color: #2196f3;
+      display: inline-block;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 20px;
+      border-bottom: 2px solid #2196f3;
+      padding-bottom: 2px;
+    }
+
+    .text {
+      text-indent: 15px;
+      font-size: 15px;
+    }
+
+    ul.list {
+      list-style-type: circle;
+      margin: 7px;
+    }
+
+    .info {
+      background-color: rgb(161, 202, 255);
+      border-left: 6px solid #2196F3;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <h1 class="heading">
+      SQL PRIMARY KEY Constraint
+    </h1>
+
+    <br>
+
+    <p class="text">
+      The PRIMARY KEY constraint uniquely identifies each record in a table.
+    </p>
+
+
+    <br>
+
+    <p class="text">
+      Primary keys must contain UNIQUE values, and cannot contain NULL values.
+    </p>
+
+    <br>
+
+    <p class="text">
+      A table can have only ONE primary key; and in the table, this primary key can consist of single or multiple columns (fields).
+    </p>
+
+  </div>
+
+  <br><br><br><br>
+
+  <div>
+    <h1 class="heading">
+      SQL PRIMARY KEY on CREATE TABLE
+    </h1>
+
+    <br>
+
+    <p class="text">
+      The following SQL creates a PRIMARY KEY on the "ID" column when the "Persons" table is created:
+    </p>
+
+    <br>
+
+    <div class="w3-card-4 card">
+      <header class="w3-container w3-blue">
+        <h1>
+          Example:
+        </h1>
+      </header>
+
+      <div class="w3-container">
+        <pre>CREATE TABLE Persons (
+ID int NOT NULL,
+LastName varchar(255) 
+NOT NULL, FirstName 
+varchar(255), Age int,
+PRIMARY KEY (ID) );                       
+          </pre>
+      </div>
+    </div>
+
+  </div>
+
+  <br><br><br>
+
+</body></html>

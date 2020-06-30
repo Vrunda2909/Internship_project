@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style type="text/css">
+    body {
+      margin: 10px;
+    }
+
+    .heading {
+      color: #2196f3;
+      display: inline-block;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 20px;
+      border-bottom: 2px solid #2196f3;
+      padding-bottom: 2px;
+    }
+
+    .text {
+      text-indent: 15px;
+      font-size: 15px;
+    }
+
+    ul.list {
+      list-style-type: circle;
+      margin: 7px;
+    }
+
+    .info {
+      background-color: rgb(161, 202, 255);
+      border-left: 6px solid #2196F3;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <h1 class="heading">
+      SQL NOT NULL Constraint
+    </h1>
+
+    <br>
+
+    <p class="text">
+      By default, a column can hold NULL values
+    </p>
+
+
+    <br>
+
+    <p class="text">
+      The NOT NULL constraint enforces a column to NOT accept NULL values.
+    </p>
+
+    <br>
+
+    <p class="text">
+      This enforces a field to always contain a value, which means that you cannot insert a new record, or update a
+      record without adding a value to this field.
+    </p>
+  </div>
+
+  <br><br><br>
+
+  <div>
+    <h1 class="heading">
+      SQL NOT NULL on CREATE TABLE
+    </h1>
+
+    <br>
+
+    <p class="text">
+      The following SQL ensures that the "ID", "LastName", and "FirstName" columns will NOT accept NULL values when the
+      "Persons" table is created:
+    </p>
+
+    <br>
+
+    <div class="w3-card-4 card">
+      <header class="w3-container w3-blue">
+        <h1>
+          Example:
+        </h1>
+      </header>
+
+      <div class="w3-container">
+        <pre>CREATE TABLE Persons (
+ID int NOT NULL,
+LastName varchar(255) 
+NOT NULL,
+FirstName varchar(255) 
+NOT NULL,
+Age int );                      
+          </pre>
+      </div>
+    </div>
+
+  </div>
+
+
+
+</body>
+
+</html>

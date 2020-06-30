@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_study"
+            android:icon="@drawable/ic_menu_study"
+            android:title="@string/menu_study" />
+        <item
+            android:id="@+id/nav_quiz"
+            android:icon="@drawable/ic_menu_quiz"
+            android:title="@string/menu_quiz"/>
+        <item
+            android:id="@+id/nav_query"
+            android:icon="@drawable/ic_menu_query"
+            android:title="@string/menu_query"/>
+        <item
+            android:id="@+id/nav_score"
+            android:icon="@drawable/ic_menu_score"
+            android:title="@string/menu_score"/>
+        <item
+            android:id="@+id/nav_cirtificate"
+            android:icon="@drawable/ic_menu_cirtificate"
+            android:title="@string/menu_cirtificate"/>
+    </group>
+    <item android:title="Communication ">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_black"
+                android:title="@string/menu_share"/>
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_rate_review_black"
+                android:title="@string/menu_rate"/>
+            <item
+                android:id="@+id/nav_other"
+                android:icon="@drawable/ic_send_black_24dp"
+                android:title="@string/menu_other"/>
+        </menu>
+    </item>
+    <item android:title="Logout">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_exit_to_app_black"
+                android:title="@string/menu_logout"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style type="text/css">
+    body {
+      margin: 10px;
+    }
+
+    .heading {
+      color: #2196f3;
+			display: inline-block;
+			text-align: center;
+			font-weight: bold;
+			margin-top: 20px;
+			border-bottom: 2px solid #2196f3;
+			padding-bottom: 2px;
+    }
+
+    .text {
+      text-indent: 15px;
+      font-size: 15px;
+    }
+
+    ul.list {
+      list-style-type: circle;
+      margin: 7px;
+    }
+
+    .info {
+      background-color: rgb(161, 202, 255);
+      border-left: 6px solid #2196F3;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <h1 class="heading">
+      The SQL AND, OR and NOT Operators
+    </h1>
+
+    <br>
+
+    <p class="text">
+      The WHERE clause can be combined with AND, OR, and NOT operators.
+    </p>
+
+    <br>
+
+    <p class="text">
+      The AND and OR operators are used to filter records based on more than one condition:
+    </p>
+
+    <br>
+
+    <p class="text">
+      The AND operator displays a record if all the conditions separated by AND are TRUE.
+    </p>
+
+    <br>
+
+    <p class="text">
+      The OR operator displays a record if any of the conditions separated by OR is TRUE.
+    </p>
+
+    <br>
+
+    <p class="text">
+      The NOT operator displays a record if the condition(s) is NOT TRUE.
+    </p>
+
+
+    <br>
+
+    <div class="w3-card-4 card">
+      <header class="w3-container w3-blue">
+        <h1>
+          AND Syntax :
+        </h1>
+      </header>
+
+      <div class="w3-container">
+        <pre>SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 AND 
+condition2 AND 
+condition3 ...;
+          </pre>
+      </div>
+    </div>
+
+
+    <br>
+
+    <div class="w3-card-4 card">
+      <header class="w3-container w3-blue">
+        <h1>
+          OR Syntax :
+        </h1>
+      </header>
+
+      <div class="w3-container">
+        <pre>SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 OR 
+condition2 OR 
+condition3 ...;
+          </pre>
+      </div>
+    </div>
+
+
+    <br>
+
+    <div class="w3-card-4 card">
+      <header class="w3-container w3-blue">
+        <h1>
+          NOT Syntax :
+        </h1>
+      </header>
+
+      <div class="w3-container">
+        <pre>SELECT column1, column2, ...
+          FROM table_name
+          WHERE NOT condition;
+          </pre>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

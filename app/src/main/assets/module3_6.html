@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style type="text/css">
+    body {
+      margin: 10px;
+    }
+
+    .heading {
+      color: #2196f3;
+      display: inline-block;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 20px;
+      border-bottom: 2px solid #2196f3;
+      padding-bottom: 2px;
+    }
+
+    .text {
+      text-indent: 15px;
+      font-size: 15px;
+    }
+
+    ul.list {
+      list-style-type: circle;
+      margin: 7px;
+    }
+
+    .info {
+      background-color: rgb(161, 202, 255);
+      border-left: 6px solid #2196F3;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <h1 class="heading">
+        The SQL UNION Operator
+    </h1>
+
+    <br>
+
+    <p class="text">
+        The UNION operator is used to combine the result-set of two or more SELECT statements.
+    </p>
+
+    <br>
+
+		<ul class="list">
+			<li>Each SELECT statement within UNION must have the same number of columns.</li> <br>
+			<li>The columns must also have similar data types.</li> <br>
+			<li>The columns in each SELECT statement must also be in the same order.</li> <br>
+		</ul>
+
+    <br>
+
+    <div class="w3-card-4 card">
+      <header class="w3-container w3-blue">
+        <h1>
+            UNION Syntax:
+        </h1>
+      </header>
+
+      <div class="w3-container">
+        <pre>SELECT column_name(s) 
+FROM table1 UNION
+SELECT column_name(s) 
+FROM table2;                              
+          </pre>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="w3-card-4 card">
+      <header class="w3-container w3-blue">
+        <h1>
+            UNION ALL Syntax:
+        </h1>
+      </header>
+
+      <div class="w3-container">
+        <pre>SELECT column_name(s) 
+FROM table1 UNION ALL
+SELECT column_name(s) 
+FROM table2;                                        
+          </pre>
+      </div>
+    </div>
+
+    <br>
+
+    <p class="text">
+        The UNION operator selects only distinct values by default. To allow duplicate values, use UNION ALL.
+    </p>
+
+    <br>
+
+    <div class="info">
+      <p><strong>Note :</strong> The column names in the result-set are usually equal to the column names in the first SELECT statement in the UNION.</p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

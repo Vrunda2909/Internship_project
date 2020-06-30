@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QueryFourActivity"
+    android:background="@drawable/background">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+            
+         <TextView
+             android:id="@+id/no_counter1"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:paddingTop="16dp"
+             android:paddingRight="20dp"
+             android:textSize="16dp"
+             android:textStyle="bold"
+             android:text="Query-4"
+             android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/no_counter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="16dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="     0 / 0"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:padding="16dp"
+                android:text="Question"
+                android:background="@drawable/question_bg"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"/>
+
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/option_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+
+            <EditText
+                android:id="@+id/optionbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:height="200dp"
+                android:layout_margin="3dp"
+                android:lines="10"
+                android:background="@drawable/border_object_two"
+                android:backgroundTint="#888686"
+                android:maxLength="500">
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/check_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:alpha="0.07"
+                android:background="@drawable/button_bd"
+                android:backgroundTint="#0E7E13"
+                android:text="Check Query"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:enabled="false"/>
+
+            <Button
+                android:id="@+id/next_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="20dp"
+                android:alpha="0.07"
+                android:background="@drawable/button_bd"
+                android:backgroundTint="#0E7E13"
+                android:text="Next Query"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:enabled="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/setimage"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:layout_marginTop="30dp"-->
+    <!--            android:minWidth="200dp"-->
+    <!--            android:maxWidth="210dp"-->
+    <!--            android:maxHeight="210dp"-->
+    <!--            android:minHeight="200dp"/>-->
+
+        <WebView
+            android:id="@+id/setimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"/>
+            <TextView
+                android:id="@+id/linktext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColorLink="@android:color/holo_red_dark"
+                android:layout_marginTop="30dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

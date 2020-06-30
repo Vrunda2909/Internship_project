@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style type="text/css">
+    body {
+      margin: 10px;
+    }
+
+    .heading {
+      color: #2196f3;
+      display: inline-block;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 20px;
+      border-bottom: 2px solid #2196f3;
+      padding-bottom: 2px;
+    }
+
+    .text {
+      text-indent: 15px;
+      font-size: 15px;
+    }
+
+    ul.list {
+      list-style-type: circle;
+      margin: 7px;
+    }
+
+    .info {
+      background-color: rgb(161, 202, 255);
+      border-left: 6px solid #2196F3;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+    }
+
+    #table {
+			overflow: auto;
+		}
+
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <h1 class="heading">
+      SQL Wildcard Characters
+    </h1>
+
+    <br>
+
+    <p class="text">
+      A wildcard character is used to substitute one or more characters in a string. Wildcard characters are used with
+      the SQL LIKE operator. The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
+    </p>
+  </div>
+
+  <br><br><br><br>
+
+
+  <div>
+    <h1 class="heading">
+      Wildcard Characters in MS Access
+    </h1>
+
+    <br>
+
+    <div id="table">
+			<table class="w3-table-all">
+				<thead>
+					<tr class="w3-blue">
+						<th>Symbol</th>
+						<th>Description</th>
+						<th>Example</th>
+					</tr>
+				</thead>
+				<tr>
+					<td>*</td>
+					<td>Represents zero or more characters</td>
+					<td>bl* finds bl, black, blue, and blob</td>
+				</tr>
+				<tr>
+					<td> ? </td>
+					<td> Represents a single character </td>
+					<td>h?t finds hot, hat, and hit  </td>
+				</tr>
+				<tr>
+					<td> [] </td>
+					<td> Represents any single character within the brackets </td>
+					<td> h[oa]t finds hot and hat, but not hit </td>
+        </tr>
+        <tr>
+					<td> ! </td>
+					<td>Represents any character not in the brackets  </td>
+					<td> h[!oa]t finds hit, but not hot and hat </td>
+				</tr>
+				<tr>
+					<td>-  </td>
+					<td> Represents a range of characters </td>
+					<td> c[a-b]t finds cat and cbt </td>
+        </tr>
+        <tr>
+					<td>#  </td>
+					<td> Represents any single numeric character </td>
+					<td> 2#5 finds 205, 215, 225, 235, 245, 255, 265, 275, 285, and 295</td>
+				</tr>
+			</table>
+    </div>
+    
+  </div>
+
+  <br><br><br><br>
+
+  <div>
+    <h1 class="heading">
+      Wildcard Characters in SQL Server
+    </h1>
+
+    <br>
+
+    <div id="table">
+			<table class="w3-table-all">
+				<thead>
+					<tr class="w3-blue">
+						<th>Symbol</th>
+						<th>Description</th>
+						<th>Example</th>
+					</tr>
+				</thead>
+				<tr>
+					<td>%</td>
+					<td>Represents zero or more characters</td>
+					<td>bl% finds bl, black, blue, and blob</td>
+				</tr>
+				<tr>
+					<td> _ </td>
+					<td> Represents a single character </td>
+					<td>h t finds hot, hat, and hit  </td>
+				</tr>
+				<tr>
+					<td> [] </td>
+					<td> Represents any single character within the brackets </td>
+					<td> h[oa]t finds hot and hat, but not hit </td>
+        </tr>
+        <tr>
+					<td> ^ </td>
+					<td>Represents any character not in the brackets  </td>
+					<td> h[^oa]t finds hit, but not hot and hat </td>
+				</tr>
+				<tr>
+					<td>-  </td>
+					<td> Represents a range of characters </td>
+					<td> c[a-b]t finds cat and cbt </td>
+        </tr>
+			</table>
+    </div>
+
+    <br>
+
+    <p class="text">
+      All the wildcards can also be used in combinations!
+    </p>
+
+    <br>
+
+    <p class="text">
+      Here are some examples showing different LIKE operators with '%' and '_' wildcards:
+    </p>
+
+    <br>
+
+    <div id="table">
+			<table class="w3-table-all">
+				<thead>
+					<tr class="w3-blue">
+						<th>LIKE Operator</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tr>
+					<td>WHERE CustomerName LIKE 'a%'</td>
+					<td>Finds any values that starts with "a"</td>
+				</tr>
+				<tr>
+					<td> WHERE CustomerName LIKE '%a' </td>
+					<td> Finds any values that ends with "a" </td>
+				</tr>
+				<tr>
+					<td> WHERE CustomerName LIKE '%or%' </td>
+					<td> Finds any values that have "or" in any position </td>
+        </tr>
+        <tr>
+					<td> WHERE CustomerName LIKE '_r%' </td>
+					<td>Finds any values that have "r" in the second position </td>
+				</tr>
+				<tr>
+					<td>WHERE CustomerName LIKE 'a_%_%' </td>
+					<td> Finds any values that starts with "a" and are at least 3 characters in length</td>
+        </tr>
+        <tr>
+          <td> WHERE ContactName LIKE 'a%o' </td>
+          <td>  Finds any values that starts with "a" and ends with "o"</td>
+        </tr>
+			</table>
+    </div>
+    
+  </div>
+
+  <br><br><br>
+
+</body>
+
+</html>
